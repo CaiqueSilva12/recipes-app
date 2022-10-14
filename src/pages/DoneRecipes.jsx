@@ -15,11 +15,11 @@ function DoneRecipes() {
     .filter(({ type }) => filter === 'all' || type === filter);
 
   return (
-    <div>
+    <>
       <Header />
       <FilterButtons />
       <RecipesInfo recipes={ filteredRecipes } />
-    </div>
+    </>
   );
 }
 

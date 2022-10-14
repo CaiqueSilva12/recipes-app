@@ -6,7 +6,7 @@
   flex-direction: column;
   flex-flow: column nowrap;
   font-family: sans-serif;
-  height: 670px;
+  /* height: 670px; */
   justify-content: center;
   min-height: 640px;
   min-width: 360px;

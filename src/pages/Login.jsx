@@ -29,13 +29,13 @@ function Login({ history }) {
   };
 
   return (
-    <div className="login_page">
-      <form>
+    <div className="login_page flex justify-center">
+      <form className="flex flex-col justify-center gap-3 items-center">
         <h1 className="recipes_title">Recipes App</h1>
-        <label htmlFor="email">
+        <label htmlFor="email" className="flex flex-row justify-center">
 
           <input
-            className="email_input"
+            className="text-center rounded-md"
             type="email"
             value={ user.email }
             name="email"
@@ -45,23 +45,23 @@ function Login({ history }) {
             placeholder="Email"
           />
         </label>
-        <br />
-        <label htmlFor="password">
+
+        <label htmlFor="password" className="flex flex-row justify-center">
 
           <input
-            className="password_input"
+            className="text-center rounded-md"
             type="password"
             name="password"
             id="password"
             value={ user.password }
             data-testid="password-input"
             onChange={ (e) => changeUser(e) }
-            placeholder="password"
+            placeholder="Password"
           />
         </label>
-        <br />
+
         <button
-          className="btn btn-primary"
+          className="text-white bg-red-900 rounded-lg w-28 "
           type="submit"
           data-testid="login-submit-btn"
           onClick={ (e) => saveUserAndRedirect(e) }

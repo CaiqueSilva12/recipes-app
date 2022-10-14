@@ -12,7 +12,7 @@ function Header() {
   const [showBar, setShowBar] = useState(false);
 
   return (
-    <div>
+    <header>
       <h1 data-testid="page-title">{ title }</h1>
 
       <input
@@ -34,7 +34,7 @@ function Header() {
       ) }
 
       { showBar && <SearchBar /> }
-    </div>
+    </header>
   );
 }
 
