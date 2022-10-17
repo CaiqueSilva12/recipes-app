@@ -20,13 +20,8 @@ function SearchBar() {
   };
 
   return (
-    <div>
-      <input
-        value={ search }
-        onChange={ (e) => setSearch(e.target.value) }
-        type="text"
-        data-testid="search-input"
-      />
+    <div className="flex flex-col items-center">
+      <div className="search-bar font-serif text-black">
       <label htmlFor="ingredient">
         Ingredient
         <input
@@ -60,7 +55,16 @@ function SearchBar() {
           onClick={ (e) => setSearchOption(e.target.value) }
         />
       </label>
+      </div>
+      <input
+        className="rounded-md"
+        value={ search }
+        onChange={ (e) => setSearch(e.target.value) }
+        type="text"
+        data-testid="search-input"
+      />
       <button
+        className="search-bar-button my-2 text-white bg-red-900 rounded-lg w-28"
         type="button"
         data-testid="exec-search-btn"
         onClick={ verifySearch }

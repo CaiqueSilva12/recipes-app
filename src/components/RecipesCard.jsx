@@ -13,10 +13,11 @@ function RecipesCard({ recipes }) {
   };
 
   return (
-    <ul className="recipes">
+    <ul className="recipes bg-white content-between">
       {
         recipes.map((recipe, index) => (
           <li
+            className="bg-white rounded-md text-center text-red-900"
             key={ index }
             data-testid={ `${index}-recipe-card` }
             onClick={ () => history.push(`${pathname}/${getRecipeId(recipe)}`) }

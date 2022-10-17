@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+}
+
+.header-title {
+  text-shadow: 0 1px 0 rgb(255, 255, 255);
+}
+
+.search-bar {
+  text-shadow: 0 2px 0 rgb(255, 255, 255);
+}
+
+.search-bar-button {
+  text-shadow: 0 2px 0 rgb(0, 0, 0);
+  box-shadow: 0 2px 0 rgb(0, 0, 0);
+}

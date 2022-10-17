@@ -11,7 +11,9 @@ function Footer() {
   };
 
   return (
-    <footer className="footer" data-testid="footer">
+    <footer
+    className="footer bg-yellow-500 w-full flex justify-between py-2"
+    data-testid="footer">
       <input
         data-testid="drinks-bottom-btn"
         type="image"

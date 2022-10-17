@@ -52,16 +52,16 @@ function Recipes() {
   }, [pathname]);
 
   return (
-    <div>
+    <>
       <Header />
       { recipes.length && (
         <>
-          <RecipesCard recipes={ recipes } />
           <Categories />
+          <RecipesCard recipes={ recipes } />
         </>
       ) }
       <Footer />
-    </div>
+    </>
   );
 }
 

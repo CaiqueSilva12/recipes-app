@@ -35,7 +35,7 @@ function Login({ history }) {
         <label htmlFor="email" className="flex flex-row justify-center">
 
           <input
-            className="text-center rounded-md"
+            className="email-input text-center rounded-md"
             type="email"
             value={ user.email }
             name="email"
@@ -49,7 +49,7 @@ function Login({ history }) {
         <label htmlFor="password" className="flex flex-row justify-center">
 
           <input
-            className="text-center rounded-md"
+            className="password-input text-center rounded-md"
             type="password"
             name="password"
             id="password"
@@ -61,7 +61,7 @@ function Login({ history }) {
         </label>
 
         <button
-          className="text-white bg-red-900 rounded-lg w-28 "
+          className="login-button text-white bg-red-900 rounded-lg w-28 "
           type="submit"
           data-testid="login-submit-btn"
           onClick={ (e) => saveUserAndRedirect(e) }

@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+  @apply h-screen; 
+}
+
 body {
+  @apply h-full w-full ;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

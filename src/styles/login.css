@@ -7,6 +7,10 @@
   background-image: url('../images/recipesApp.jpg');
 }
 
+.email-input, .password-input {
+  box-shadow: 0 2px 0 rgb(0, 0, 0);;
+}
+
 .recipes_title {
   font-family: fantasy;
   font-size: 50px;
@@ -17,6 +21,8 @@
   text-shadow: 0 3px 0 rgb(0, 0, 0);
 }
 
-.btn {
+.login-button {
+  text-shadow: 0 2px 0 rgb(0, 0, 0);
+  box-shadow: 0 2px 0 rgb(0, 0, 0);;
   margin-top: 20px;
 }
