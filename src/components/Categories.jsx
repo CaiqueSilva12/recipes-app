@@ -46,18 +46,18 @@ function Categories() {
   }, [categoryClicked]);
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-gray-200">
       <h1
       className="header-title flex justify-center text-red-900 text-3xl font-sans"
       data-testid="page-title">
         { title }
         </h1>
-    <div className="bg-white w-full flex justify-evenly ">
+    <div className="bg-gray-200 w-full flex justify-around ">
       {
         categories.length && categories
           .map(({ strCategory }, index) => (
             <button
-              className="bg-red-900 rounded-md text-white my-1"
+              className="bg-red-900 rounded-md text-white my-1 px-1 py-0"
               type="button"
               key={ `${strCategory}-${index}` }
               onClick={ () => setCategoryClicked((prev) => {

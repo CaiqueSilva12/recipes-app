@@ -22,6 +22,7 @@ function Header() {
         <div className="flex justify-between">
       { search && (
         <input
+          className="rounded-3xl"
           type="image"
           src={ searchIcon }
           alt="search icon"
@@ -33,6 +34,7 @@ function Header() {
       { showBar && <SearchBar /> }
 
       <input
+        className="rounded-3xl bg-red-900 p-1"
         type="image"
         src={ profileIcon }
         alt="profile icon"

@@ -13,7 +13,7 @@ function RecipesCard({ recipes }) {
   };
 
   return (
-    <ul className="recipes bg-white content-between">
+    <ul className="recipes bg-gray-200 content-between">
       {
         recipes.map((recipe, index) => (
           <li
