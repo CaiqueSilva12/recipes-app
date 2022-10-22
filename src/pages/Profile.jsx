@@ -16,12 +16,17 @@ function Profile() {
     redirect('/');
   };
   return (
-    <div>
+    <div className="flex w-full h-full flex-col">
       <Header />
-      <div>
-        <p data-testid="profile-email">{ email }</p>
+        <p 
+          className="font-bold text-xl text-black"
+          data-testid="profile-email">
+          { email }
+        </p>
 
+      <div className="flex h-full flex-col justify-center">
         <button
+          className="bg-red-900 rounded-md text-white my-1 px-1 py-0"
           type="button"
           data-testid="profile-done-btn"
           onClick={ () => redirect('/done-recipes') }
@@ -30,6 +35,7 @@ function Profile() {
         </button>
 
         <button
+          className="bg-red-900 rounded-md text-white my-1 px-1 py-0"
           type="button"
           data-testid="profile-favorite-btn"
           onClick={ () => redirect('/favorite-recipes') }
@@ -38,6 +44,7 @@ function Profile() {
         </button>
 
         <button
+          className="bg-red-900 rounded-md text-white my-1 px-1 py-0"
           type="button"
           data-testid="profile-logout-btn"
           onClick={ logoutButton }

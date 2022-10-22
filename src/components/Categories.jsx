@@ -57,7 +57,7 @@ function Categories() {
         categories.length && categories
           .map(({ strCategory }, index) => (
             <button
-              className="bg-red-900 rounded-md text-white my-1 px-1 py-0"
+              className="category-button bg-red-900 rounded-md text-white my-1 px-1 py-0"
               type="button"
               key={ `${strCategory}-${index}` }
               onClick={ () => setCategoryClicked((prev) => {
