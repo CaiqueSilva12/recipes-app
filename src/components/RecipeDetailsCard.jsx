@@ -27,13 +27,23 @@ function RecipeDetailsCard({ recipe }) {
     ));
 
   return (
-    <div className="recipe-details-container">
-      <img
-        src={ image }
-        alt={ name }
-        data-testid="recipe-photo"
-      />
-      <h3 data-testid="recipe-title">{ name }</h3>
+    <div className="recipe-details-container flex flex-col items-center">
+        <div
+          className="text-center bg-white rounded-xl mt-7"
+        >
+          <img 
+            className=""
+            src={ image }
+            alt={ name }
+            data-testid="recipe-photo"
+          />
+          <h3
+            className="my-1 font-bold text-red-900"
+            data-testid="recipe-title"
+          >
+            { name }
+          </h3>
+        </div>
       <span data-testid="recipe-category">
         { pathname.includes('meals') ? category : alcoholicOrNot }
       </span>

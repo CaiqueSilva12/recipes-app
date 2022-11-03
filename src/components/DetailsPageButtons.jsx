@@ -40,7 +40,7 @@ function DetailsPageButtons() {
   }, [favoriteRecipes]);
 
   return (
-    <div className="detail-buttons-container">
+    <div className="fixed top-0 left-0 w-full flex justify-end bg-yellow-500">
       <input
         type="image"
         src={ shareIcon }

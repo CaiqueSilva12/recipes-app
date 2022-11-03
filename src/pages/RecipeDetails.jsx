@@ -53,7 +53,7 @@ function RecipeDetails() {
   }, []);
 
   return (
-    <div className="recipe-details-page">
+    <div className="recipe-details-page ">
       <DetailsPageButtons />
       {
         Object.keys(recipe).length && (
@@ -68,9 +68,9 @@ function RecipeDetails() {
       {
         !isDone && (
           <button
+            className="start-recipe-btn"
             type="button"
             onClick={ () => history.push(`${pathname}/in-progress`) }
-            className="start-recipe-btn"
             data-testid="start-recipe-btn"
           >
             { isInProgress ? 'Continue Recipe' : 'Start Recipe' }
