@@ -68,7 +68,7 @@ function RecipeDetails() {
       {
         !isDone && (
           <button
-            className="start-recipe-btn"
+            className="start-recipe-btn flex justify-center w-full bg-red-900 text-white"
             type="button"
             onClick={ () => history.push(`${pathname}/in-progress`) }
             data-testid="start-recipe-btn"

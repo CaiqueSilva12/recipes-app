@@ -44,7 +44,9 @@ function RecipeDetailsCard({ recipe }) {
             { name }
           </h3>
         </div>
-      <span data-testid="recipe-category">
+      <span
+        className="my-2 font-bold text-black underline"
+        data-testid="recipe-category">
         { pathname.includes('meals') ? category : alcoholicOrNot }
       </span>
       { video && (

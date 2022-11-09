@@ -53,7 +53,6 @@
 .recipe-details-page {
   max-height: 100%;
   overflow: auto;
-  position: absolute;
 }
 
 /* .recipe-details-container {
@@ -68,9 +67,15 @@
   width: 340px;
 } */
 
-.recipe-details-container img {
+ .recipe-details-container img {
   height: 200px;
   width: 200px;
+}
+
+.recipe-details-container {
+  margin-top: 150px;
+  display: block;
+  text-align: -webkit-center;
 }
 
 /* .sugestions-container {
@@ -93,6 +98,14 @@
   width: 120px;
 }
 
+.sugestions-list section {
+  text-align: center;
+}
+
+.sugestions-list {
+  display: -webkit-inline-box;
+  overflow-x: auto;
+}
 /* .start-recipe-btn {
   bottom: 0;
   height: 40px;
